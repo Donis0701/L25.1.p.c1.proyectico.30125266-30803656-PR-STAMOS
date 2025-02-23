@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <section id="prestamoForm">
+        <h3>Ingrese los datos del prestamo</h3>
+        <input type="text" id="prestamoForm_inCliente" placeholder="Cliente" />
+        <input type="text" id="prestamoForm_inCodigo" placeholder="Codigo" />
+        <input type="text" id="prestamoForm_inPrestamo" placeholder="Prestamo" />
+        <input type="text" id="prestamoForm_inMeses" placeholder="Meses" />
+        <button id="prestamoForm_btProcesar">Procesar</button>
+    </section>
+    <section id="mainForm">
+        <h3>Información de la oficina</h3>
+        <div id="mainForm_salida"></div>
+    </section>
+</body>
+<script type="module">
+    import cl_principal from "./js/cl_principal.js";
+    new cl_principal();
+    </script>
+</html>
