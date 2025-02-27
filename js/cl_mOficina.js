@@ -4,17 +4,17 @@ export default class cl_mOficina{
         this.porcComisionMensual = porcComisionMensual;
         this.cntClientes2meses = 0;
         this.clienteMenor = "";
-        this.prestamosClientes = 0;
+        this.prestamosClientes = 9999999999999;
         this.acumPrestamos = 0;
     }
 
     procesarPrestamo(prestamo){
-        this.acumPrestamos += prestamo.monto;
+        this.acumPrestamos += prestamo.prestamo;
         if(prestamo.meses == 2){
             this.cntClientes2meses++;
         }
-        if(prestamo.monto < this.prestamosClientes){
-            this.prestamosClientes = prestamo.monto;
+        if(prestamo.prestamo < this.prestamosClientes){
+            this.prestamosClientes = prestamo.prestamo;
             this.clienteMenor = prestamo.cliente;
         }
     }

@@ -16,8 +16,9 @@ export default class cl_vOficina{
             return this.mPrestamo;
     }
     reportarPrestamo(montoFinal,prestamosM2meses,clienteMenor) {
-        this.salida.innerHTML += `Monto final disponible: ${montoFinal}
-        \nCantidad de clientes que pideron por 2 meses: ${prestamosM2meses}
+        this.salida.innerHTML = `
+        Monto final disponible: ${montoFinal}<br>
+        \nCantidad de clientes que pideron por 2 meses: ${prestamosM2meses}<br>
         \nCliente que pidió el préstamo menor: ${clienteMenor}`
     }
 

@@ -13,10 +13,10 @@ import cl_controlador from "./cl_controlador.js";
 
 export default class cl_principal {
     constructor(){
-        let vista = new cl_vOficina();
-        let modelo = new cl_mOficina(montoCaja,porcComisionMensual);
         let montoCaja = prompt("Ingrese el monto inicial: ");
         let porcComisionMensual = prompt("Ingrese el porcentaje de comisión mensual: ");
+        let vista = new cl_vOficina();
+        let modelo = new cl_mOficina(montoCaja,porcComisionMensual);
         let controlador = new cl_controlador(modelo,vista);
         vista.controlador = controlador;
     }

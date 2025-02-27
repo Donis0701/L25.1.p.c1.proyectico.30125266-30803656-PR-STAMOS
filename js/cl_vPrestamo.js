@@ -1,5 +1,5 @@
 export default class cl_vPrestamo {
-    cosntructor(){
+    constructor(){
         this.inCliente = document.getElementById("prestamoForm_inCliente");
         this.inCodigo = document.getElementById("prestamoForm_inCodigo");
         this.inPrestamo = document.getElementById("prestamoForm_inPrestamo");
